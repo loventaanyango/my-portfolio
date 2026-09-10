@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Loventa Anyango | Geomatic Engineer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 100 100'><rect width='100' height='100' rx='50' fill='%230058ff'/><path fill='white' d='M72.15 21.33c2.34 1.17 2.75 3.69 1.44 5.94-1.17 1.62-3.01 1.8-4.9.9a20.9 20.9 0 0 0-9.54-2.07c-11.95 0-20.7 8.1-20.7 21.15 0 13.41 8.82 21.6 20.7 21.6 3.96 0 7.47-.72 10.08-2.07 1.89-.9 3.73-.63 5 1.08 1.8 2.25 1.31 4.64-.94 5.72-4.95 2.52-10.35 3.69-15.57 3.69-18.54 0-32.4-12.69-32.4-32.49 0-19.08 13.77-31.95 32.4-31.95 5.31 0 10.26 1.08 14.43 3.51z'/></svg>">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="master.css">
+
+    <!-- Leaflet (interactive maps) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Leaflet.markercluster (for the AHP site cluster) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+
+</head>
+
+<body>
+
+    <!-- ========================================= -->
+    <!-- HEADER -->
+    <!-- ========================================= -->
+
+    <header>
+
+        <nav class="container">
+
+            <div class="logo">
+                <h2>Loventa Anyango</h2>
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#in-the-field">Field</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#game">Play</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ========================================= -->
+    <!-- HERO -->
+    <!-- ========================================= -->
+
+    <section id="hero">
+
+        <div class="container hero-container">
+
+            <div class="hero-text">
+
+                <h1>Loventa Anyango</h1>
+
+                <h2>Geomatic Engineer</h2>
+
+                <p>
+
+                    Transforming spatial data into meaningful insights through
+                    GIS, Remote Sensing, Surveying and Geospatial Analytics.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn">
+                        View Projects
+                    </a>
+
+                    <a href="Loventa_Anyango_CV.pdf" class="btn btn-outline">
+                        Download CV
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <div class="image-frame no-image" id="hero-image-frame">
+
+                    <img src="researchgateprofile.jpg" alt="Portrait of Loventa Anyango"
+                        onerror="this.style.display='none'"
+                        onload="this.style.display='block'; this.closest('.image-frame').classList.remove('no-image')">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- ABOUT -->
+    <!-- ========================================= -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <div class="section-title reveal">
+
+                <span class="eyebrow">Get to know me</span>
+                <h2>About Me</h2>
+
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-image reveal">
+
+                    <div class="image-frame no-image" id="about-image-frame">
+
+                        <img src="KAY_9490.jpg" alt="Loventa Anyango"
+                            onerror="this.style.display='none'"
+                            onload="this.style.display='block'; this.closest('.image-frame').classList.remove('no-image')">
+
+                    </div>
+
+                </div>
+
+                <div class="about-text reveal reveal-delay-1">
+
+                    <p>
+
+                        I'm a Geomatic Engineering graduate from Jomo Kenyatta
+                        University of Agriculture and Technology (JKUAT, 2025)
+                        with hands-on experience in GIS, remote sensing, and
+                        land surveying. My work applies Python-based
+                        geospatial analysis to real-world environmental and
+                        infrastructure projects, translating field survey and
+                        satellite data into actionable maps and reports.
+
+                    </p>
+
+                    <p>
+
+                        I'm a published co-author in two peer-reviewed journals
+                        on remote sensing and machine learning applications in
+                        forest ecosystem monitoring, and I bring a
+                        collaborative, solutions-driven approach to every
+                        geospatial output I deliver.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="about-stats">
+
+                <div class="stat-card glass reveal">
+
+                    <h3>2</h3>
+
+                    <p>Publications</p>
+
+                </div>
+
+                <div class="stat-card glass reveal reveal-delay-1">
+
+                    <h3>3</h3>
+
+                    <p>Professional Attachments</p>
+
+                </div>
+
+                <div class="stat-card glass reveal reveal-delay-2">
+
+                    <h3>2</h3>
+
+                    <p>Professional Certifications</p>
+
+                </div>
+
+                <div class="stat-card glass reveal reveal-delay-3">
+
+                    <h3>4</h3>
+
+                    <p>Languages</p>
+
+                </div>
+
+            </div>
+
+            <!-- Random Earth Fact widget -->
+            <div class="earth-fact-card glass reveal">
+
+                <div class="fact-icon">🛰️</div>
+
+                <div class="fact-body">
+
+                    <span class="eyebrow">Did you know?</span>
+
+                    <p id="earth-fact-text">Click the button for a random Earth fact.</p>
+
+                </div>
+
+                <button class="fact-btn" id="new-fact-btn" type="button">
+                    New Fact
+                </button>
+
+            </div>
+
+            <!-- Credentials: professional membership + certifications -->
+            <div class="credentials-grid">
+
+                <div class="membership-card glass reveal">
+
+                    <div class="membership-badge" aria-hidden="true">🎓</div>
+
+                    <div class="membership-body">
+
+                        <span class="eyebrow">Professional Membership</span>
+                        <h3>Institution of Surveyors of Kenya (ISK)</h3>
+                        <p class="membership-meta">
+                            Membership No. <strong>7081</strong>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="membership-card glass reveal reveal-delay-1">
+
+                    <div class="membership-badge" aria-hidden="true">📜</div>
+
+                    <div class="membership-body">
+
+                        <span class="eyebrow">Certifications</span>
+                        <h3>Python for Data Science, AI & Development</h3>
+                        <p class="membership-meta">
+                            IBM &nbsp;•&nbsp; Credential ID: <strong>N1XL9G0PFKFA</strong>
+                        </p>
+
+                        <h3>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h3>
+                        <p class="membership-meta">
+                            Oracle &nbsp;•&nbsp; Testing ID: <strong>OC6664691</strong> &nbsp;•&nbsp; Aug 2025 – Aug 2027
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- IN THE FIELD -->
+    <!-- ========================================= -->
+
+    <section id="in-the-field">
+
+        <div class="container">
+
+            <div class="section-title reveal">
+
+                <span class="eyebrow">Fieldwork</span>
+                <h2>In the Field</h2>
+                <p>A few moments from the field — instruments, sites, and the work behind the maps.</p>
+
+            </div>
+
+            <!-- populated by js/main.js from the FIELD_PHOTOS array -->
+            <div class="field-strip" id="field-strip"></div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- CORE EXPERTISE -->
+    <!-- ========================================= -->
+
+    <section id="expertise">
+
+        <div class="container">
+
+            <div class="section-title reveal">
+
+                <span class="eyebrow">Toolkit</span>
+                <h2>Core Expertise</h2>
+
+            </div>
+
+            <div class="expertise-grid">
+
+                <article class="expertise-card reveal">
+
+                    <h3>GIS & Remote Sensing</h3>
+
+                    <p>
+                        ArcGIS • QGIS • Google Earth Engine • ERDAS Imagine • LiDAR
+                    </p>
+
+                </article>
+
+                <article class="expertise-card reveal reveal-delay-1">
+
+                    <h3>Surveying</h3>
+
+                    <p>
+                        RTK GPS • Total Station • Cadastral Surveying • AutoCAD Civil 3D
+                    </p>
+
+                </article>
+
+                <article class="expertise-card reveal reveal-delay-2">
+
+                    <h3>Programming & Data</h3>
+
+                    <p>
+                        Python • JavaScript • PostgreSQL • PostGIS • Machine Learning • Deep Learning
+                    </p>
+
+                </article>
+
+                <article class="expertise-card reveal reveal-delay-3">
+
+                    <h3>Cloud & Research</h3>
+
+                    <p>
+                        Oracle Cloud Infrastructure • Copernicus • Earthdata • USGS EarthExplorer • Earth Observation
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- PROJECTS -> INTERACTIVE MAP -->
+    <!-- ========================================= -->
+
+    <section id="projects">
+
+        <div class="container">
+
+            <div class="section-title reveal">
+
+                <span class="eyebrow">Where the work happened</span>
+                <h2>Featured Projects</h2>
+                <p>Select a pin to explore each project on the map.</p>
+
+            </div>
+
+            <div class="map-layout">
+
+                <div class="project-list reveal" id="project-list">
+                    <!-- populated by js/main.js from the PROJECTS array -->
+                </div>
+
+                <div class="map-column reveal reveal-delay-1">
+
+                    <div class="project-legend" id="project-legend">
+                        <!-- populated by js/main.js from the PROJECTS array -->
+                    </div>
+
+                    <div id="project-map" role="application"
+                        aria-label="Interactive map of featured projects"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- RESEARCH -->
+    <!-- ========================================= -->
+
+    <section id="research">
+
+        <div class="container">
+
+            <div class="section-title reveal">
+
+                <span class="eyebrow">Published work</span>
+                <h2>Research & Publications</h2>
+
+            </div>
+
+            <!-- populated by js/main.js from the RESEARCH array -->
+            <div class="research-grid" id="research-grid"></div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- GUESS THE LOCATION GAME -->
+    <!-- ========================================= -->
+
+    <section id="game">
+
+        <div class="container">
+
+            <div class="section-title reveal">
+
+                <span class="eyebrow">Take a break</span>
+                <h2>Guess the Location</h2>
+                <p>Read the clue, click your best guess on the map, and see how close you get.</p>
+
+            </div>
+
+            <div class="game-wrapper glass reveal">
+
+                <div class="game-info">
+
+                    <h3 id="game-round-label">Round 1</h3>
+
+                    <p class="game-clue" id="game-clue">Loading a location...</p>
+
+                    <div class="game-stats">
+
+                        <div>
+                            <strong id="game-score">0</strong>
+                            Score
+                        </div>
+
+                        <div>
+                            <strong id="game-round-count">0 / 8</strong>
+                            Rounds
+                        </div>
+
+                        <div>
+                            <strong id="game-last-distance">—</strong>
+                            Last guess
+                        </div>
+
+                    </div>
+
+                    <p class="game-feedback" id="game-feedback"></p>
+
+                    <div class="game-controls">
+
+                        <button class="btn" id="game-reveal-btn" type="button">Reveal Answer</button>
+                        <button class="btn btn-outline" id="game-next-btn" type="button">Next Location</button>
+
+                    </div>
+
+                </div>
+
+                <div id="game-map" aria-label="Click anywhere on this world map to make your guess"
+                    role="application"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- EXPERIENCE -->
+    <!-- ========================================= -->
+
+    <section id="experience">
+
+        <div class="container">
+
+            <div class="section-title reveal">
+
+                <span class="eyebrow">Journey so far</span>
+                <h2>Professional Experience</h2>
+
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+                    <span class="timeline-date">Dec 2025 – Present</span>
+                    <h3>Geospatial Intern</h3>
+                    <p>Nile Surveys and Geo-Solutions Ltd</p>
+                    <ul>
+                        <li>Created location, topographic and thematic maps for multiple client projects.</li>
+                    </ul>
+                    <ul class="timeline-more" hidden>
+                        <li>Digitized drone imagery to support mapping and analysis workflows.</li>
+                        <li>Performed static field observations and beacon re-establishment using RTK GNSS and Total Station equipment.</li>
+                        <li>Conducted engineering road surveys using Total Stations and RTK GNSS.</li>
+                        <li>Prepared field survey reports for the Affordable Housing Program across select project areas.</li>
+                    </ul>
+                    <button class="timeline-toggle" type="button" aria-expanded="false">Show more</button>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <span class="timeline-date">Jan 2024 – Apr 2024</span>
+                    <h3>Geospatial Intern</h3>
+                    <p>Kenya Space Agency</p>
+                    <ul>
+                        <li>Developed Python scripts to process satellite imagery and visualize remote sensing outputs for agricultural monitoring under the Murang'a Project.</li>
+                    </ul>
+                    <ul class="timeline-more" hidden>
+                        <li>Reviewed and edited Space Club educational content to improve scientific accuracy and readability for young audiences.</li>
+                        <li>Served as rapporteur for the Earth Observation Workshop, compiling and presenting a comprehensive final report.</li>
+                        <li>Coordinated data entry and logistics for Kenya Space Expo 2024, supporting smooth event delivery.</li>
+                    </ul>
+                    <button class="timeline-toggle" type="button" aria-expanded="false">Show more</button>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <span class="timeline-date">Jan 2023 – Mar 2023</span>
+                    <h3>Survey Intern</h3>
+                    <p>Ministry of Lands, Public Works, and Urban Planning – Thika</p>
+                    <ul>
+                        <li>Supported cadastral surveys through chainwork and field documentation.</li>
+                    </ul>
+                    <ul class="timeline-more" hidden>
+                        <li>Conducted mutation checks and computations to validate land parcel changes.</li>
+                    </ul>
+                    <button class="timeline-toggle" type="button" aria-expanded="false">Show more</button>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <span class="timeline-date">Feb 2019 – Aug 2019</span>
+                    <h3>Relationship Officer</h3>
+                    <p>Equity Bank Kenya Ltd – Westlands</p>
+                    <ul>
+                        <li>Delivered customer service support and handled teller duties, transaction processing, and financial record maintenance.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="education-block reveal">
+
+                <h3 class="education-heading">Education</h3>
+
+                <div class="education-item">
+                    <span class="timeline-date">Sept 2019 – June 2025</span>
+                    <h3>B.Sc. in Geomatic Engineering and Geospatial Information Systems</h3>
+                    <p>Jomo Kenyatta University of Agriculture and Technology (JKUAT), Juja</p>
+                </div>
+
+                <div class="education-item">
+                    <span class="timeline-date">Feb 2015 – Nov 2018</span>
+                    <h3>Kenya Certificate of Secondary Education (KCSE) — Grade A (82 points)</h3>
+                    <p>Moi Forces Academy, Lanet</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- CONTACT -->
+    <!-- ========================================= -->
+
+    <section id="contact">
+
+        <div class="container reveal">
+
+            <div class="section-title">
+
+                <span class="eyebrow">Get in touch</span>
+                <h2>Let's Connect</h2>
+
+            </div>
+
+            <p>
+
+                Interested in collaborating or discussing geospatial solutions?
+                Feel free to get in touch.
+
+            </p>
+
+            <a href="mailto:loventaanyango4@gmail.com" class="btn">
+                Send an Email
+            </a>
+
+            <ul class="contact-details">
+
+                <li>
+                    <span aria-hidden="true">✉️</span>
+                    <a href="mailto:loventaanyango4@gmail.com">loventaanyango4@gmail.com</a>
+                </li>
+
+                <li>
+                    <span aria-hidden="true">📞</span>
+                    <a href="tel:+254707238818">+254 707 238 818</a>
+                </li>
+
+                <li>
+                    <span aria-hidden="true">📍</span>
+                    <span>Nairobi, Kenya</span>
+                </li>
+
+            </ul>
+
+            <div class="social-links">
+
+                <a href="https://github.com/loventaanyango" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                    <span>GH</span>
+                </a>
+
+                <a href="https://linkedin.com/in/loventa-anyango" target="_blank" rel="noopener" class="social-link"
+                    aria-label="LinkedIn">
+                    <span>in</span>
+                </a>
+
+                <a href="https://www.researchgate.net/profile/Loventa-Otieno" target="_blank" rel="noopener"
+                    class="social-link" aria-label="ResearchGate">
+                    <span>RG</span>
+                </a>
+
+                <a href="https://orcid.org/0009-0001-8251-881X" target="_blank" rel="noopener" class="social-link"
+                    aria-label="ORCID">
+                    <span>iD</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Loventa Anyango. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Leaflet.markercluster -->
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
