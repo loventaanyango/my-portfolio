@@ -512,7 +512,7 @@ function initResearch(){
             ${paper.role ? `<p class="role">${paper.role}</p>` : ''}
             <p>${paper.summary}</p>
             ${paper.takeaway ? `<span class="takeaway">${paper.takeaway}</span><br>` : ''}
-            ${paper.link ? `<a class="research-link" href="${paper.link}" target="_blank" rel="noopener">Read the paper →</a>` : ''}
+            ${paper.link ? `<a class="research-link" href="${paper.link}" target="_blank" rel="noopener">View publication →</a>` : ''}
         `;
 
         grid.appendChild(card);
