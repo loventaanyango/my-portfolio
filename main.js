@@ -261,7 +261,7 @@ const PROJECTS = [
         description: "Tracking regrowth after wildfire by intergrating machine learning, satellite imagery and environmental drivers.",
         role: "Project author",
         tools: ["Google Earth Engine", "Landsat 7/8", "QGIS", "Python"],
-        results: "Built a model that explains 90.1% of the variance in post-fire vegetation recovery",
+        results: ["Built a model that explains 90.1% of the variance in post-fire vegetation recovery"],
         color: "var(--primary)",
         links: {
             live: "https://loventaanyango.github.io/post-fire-vegetation-recovery-mt-kenya/",
@@ -274,7 +274,7 @@ const PROJECTS = [
         description: "Control Survey Extension & RTK GPS static surveys for planning.",
         role: "Survey Team Member",
         tools: ["RTK GPS", "QGIS", "AutoCAD Civil 3D"],
-        results: "Part of a large survey team delivering Control Survey Extension across 24 AHP sites nationwide; personally present for monumentation at 4 sites and conducted static survey at 1. I was also responsible for making the location maps and the compilation of the final Control Survey Extension reports for each AHP site.",
+        results: ["Part of a large survey team delivering Control Survey Extension across 24 AHP sites nationwide; personally present for monumentation at 4 sites and conducted static survey at 1. I was also responsible for making the location maps and the compilation of the final Control Survey Extension reports for each AHP site."],
         color: "var(--accent)",
         links: {
             // live: "[https://your-storymap-or-report-link]",
@@ -287,37 +287,40 @@ const PROJECTS = [
         description: "RTK GPS and total station surveys for topographic detailing and infrastructure planning.",
         role: "Survey Team Member",
         tools: ["RTK GPS", "Total Station", "AutoCAD Civil 3D"],
-        results: "Part of a large team that delivered topographic survey for select road corridors all around Nairobi, supporting detailed mapping and infrastructure planning.",
+        results: ["Part of a large team that delivered topographic survey for select road corridors all around Nairobi, supporting detailed mapping and infrastructure planning."],
         color: "var(--route)",
         links: {
             // live: "[https://your-storymap-or-report-link]",
         },
         lat: -1.2921, lng: 36.8219 // Nairobi, Kenya
     },
-    // {
-    //     title: "Land Administration & GIS",
-    //     description: "Parcel mapping and cadastral data management for land administration.",
-    //     role: "[Your role, e.g. GIS Assistant]",
-    //     tools: ["ArcGIS Pro", "PostGIS", "QGIS"],
-    //     results: "[Quantified outcome, e.g. Digitised and validated 500+ cadastral parcels]",
-    //     links: {
-    //         live: "[https://your-storymap-or-arcgis-online-link]",
-    //         code: ""
-    //     },
-    //     lat: -4.0435, lng: 39.6682 // Mombasa, Kenya (placeholder — replace with real project location)
-    // },
-    // {
-    //     title: "Machine Learning Applications",
-    //     description: "Classification models applied to satellite imagery for land-cover mapping.",
-    //     role: "[Your role, e.g. Developer]",
-    //     tools: ["Python", "scikit-learn", "rasterio", "Sentinel-2"],
-    //     results: "[Quantified outcome, e.g. Achieved 89% overall accuracy on a 6-class land-cover model]",
-    //     links: {
-    //         live: "",
-    //         code: "[https://github.com/your-username/your-repo]"
-    //     },
-    //     lat: 0.5143, lng: 35.2698 // Eldoret, Kenya (placeholder — replace with real project location)
-    // }
+     {
+         title: " Tavevo Waters – Aerial mapping and Land Survey ",
+         description: "Aerial mapping and land survey reporting for Tavevo Waters project sites.",
+         role: "Report Writing /GIS Assistant",
+         tools: ["QGIS", "MS Word"],
+         results: "Prepared site location and index maps, digitised features from aerial imagery and survey data, and compiled survey findings into a client-ready technical report.",
+        color: "#B5573A",
+        sites: [ // approximate locations (nearest town) — adjust if you have exact coordinates
+            { name: "Taita Taveta",    lat: -3.3989, lng: 38.3669 },
+            { name: "Voi (pipeline)",  lat: -3.3700, lng: 38.5700 }
+        ]
+     },
+     {
+         title: "Consultancy Services For The Development Of Bankable Water And Sanitation Proposals For Water And Sanitation Service Providers",
+         description: "Development of Bankable Water and Sanitation Proposals for Service Providers.",
+         role: "Report Writing /GIS Assistant",
+         tools: ["QGIS", "MS Word"],
+        results: "Compiled and processed GIS, survey and spatial datasets into maps, figures and client-ready technical reports for five project sites.",
+        color: "#7A4E8C",
+        sites: [ // approximate locations (nearest town) — adjust if you have exact coordinates
+            { name: "Kirinyaga", lat: -0.4989, lng: 37.2803 },
+            { name: "Kericho",   lat: -0.3689, lng: 35.2863 },
+            { name: "Kibwezi",   lat: -2.4167, lng: 37.9667 },
+            { name: "Baringo",   lat: 0.4919,  lng: 35.7430 },
+            { name: "Kwale",     lat: -4.1550, lng: 39.4600 }
+        ]
+     }
 ];
 
 function initProjectMap(){
@@ -427,7 +430,7 @@ function initProjectMap(){
                 map.flyToBounds(bounds, { duration:0.8, padding:[40,40] });
             });
 
-        } else {
+        } else if(Number.isFinite(project.lat) && Number.isFinite(project.lng)){
 
             // Single-site project: lightweight popup (title + description
             // only) — the sidebar pin already carries the rest.
@@ -480,6 +483,15 @@ const RESEARCH = [
         summary: "Using multi-temporal satellite imagery and machine learning, this research identified the key environmental factors that shape how vegetation recovers after wildfire in the Mount Kenya forest.",
         takeaway: "Identified the key environmental drivers behind post-fire vegetation recovery",
         link: "https://doi.org/10.1007/s44288-025-00196-5"
+    },
+    {
+        title: "Consequences of climate change on crop production",
+        journal: "Book chapter — Climate Change (Elsevier)",
+        citation: "Kipkulei, H., Awandu, W., Otieno, T. A., Otieno, L. A., Ngoya, Z. J., & Rotich, B. (2027). Consequences of climate change on crop production. In T. M. Letcher (Ed.), Climate change (pp. 239–259). Elsevier.",
+        role: "Co-author",
+        summary: "This chapter reviews global evidence of how climate change is affecting crop production across regions, assessing impacts on crop quantity, quality, status and the processes that drive crop growth and development, and recommends approaches for building resilience.",
+        takeaway: "Assessed climate change impacts on crops worldwide and recommended resilience measures",
+        link: "https://doi.org/10.1016/B978-0-443-32834-3.00010-4"
     }
 ];
 
